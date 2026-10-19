@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fritzs' Fire Wood | Firewood, Yard Maintenance &amp; Brush Clearing in Anderson, CA</title>
+<meta name="description" content="Firewood, yard maintenance, brush clearing and dump runs in Anderson and Shasta County, CA. Free quotes. Call or text (530) 768-3126.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c1611;
+    --ink-2: #3a2f26;
+    --text: #4a4038;
+    --muted: #7a6e63;
+    --line: #ece6df;
+    --soft: #f8f4ef;
+    --gold: #ec8a2a;
+    --gold-deep: #c4621a;
+    --pine: #2f5d3a;
+    --fire: linear-gradient(180deg, #ffd23f 0%, #ff8a1f 55%, #df2f15 100%);
+    --radius: 18px;
+    --shadow: 0 1px 2px rgba(28,22,17,.05), 0 12px 32px rgba(28,22,17,.08);
+    --display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #fff; color: var(--text); font: 16px/1.6 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 22px; }
+  h1, h2, h3 { font-family: var(--display); color: var(--ink); letter-spacing: .2px; margin: 0; }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 54px; padding: 0 26px; border-radius: 14px; font-weight: 700; font-size: 16px; border: 0; cursor: pointer; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; white-space: nowrap; }
+  .btn:active { transform: scale(.98); }
+  .btn-dark { background: var(--ink); color: #fff; box-shadow: 0 10px 24px rgba(28,22,17,.22); }
+  .btn-dark:hover { background: #000; box-shadow: 0 14px 30px rgba(28,22,17,.3); }
+  .btn-gold { background: var(--gold); color: var(--ink); box-shadow: 0 10px 24px rgba(236,138,42,.35); }
+  .btn-gold:hover { background: #f59a3e; }
+  .btn-line { background: #fff; color: var(--ink); border: 1.5px solid #ddd5cc; }
+  .btn-line:hover { border-color: var(--ink); }
+  .btn svg { width: 19px; height: 19px; flex: none; }
+
+  /* Header */
+  header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.88); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid transparent; transition: border-color .2s, box-shadow .2s; }
+  header.scrolled { border-color: var(--line); box-shadow: 0 6px 20px rgba(28,22,17,.05); }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 18px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 52px; height: 52px; border-radius: 12px; }
+  .brand b { display: block; font-family: var(--display); font-size: 25px; font-weight: 800; color: var(--ink); line-height: 1; letter-spacing: .5px; text-transform: uppercase; }
+  .brand span { display: block; font-size: 11.5px; letter-spacing: 3.2px; color: var(--muted); margin-top: 4px; font-weight: 600; }
+  nav { display: flex; gap: 30px; font-weight: 600; font-size: 15px; color: var(--ink-2); }
+  nav a { position: relative; padding: 6px 0; }
+  nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .2s; }
+  nav a:hover::after { transform: scaleX(1); }
+  .bar .btn { height: 46px; padding: 0 18px; font-size: 15px; }
+  .label-short { display: none; }
+
+  /* Hero */
+  .hero { position: relative; padding: 56px 0 84px; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(900px 480px at 85% 10%, #ffe9d2 0%, rgba(255,233,210,0) 60%), radial-gradient(700px 400px at 0% 100%, #eaf3ec 0%, rgba(234,243,236,0) 60%); pointer-events: none; }
+  .hero .grid { position: relative; display: grid; grid-template-columns: 1.02fr 1fr; gap: 56px; align-items: center; }
+  /* Desktop: the hero fills 80% of the screen height, content centered. */
+  @media (min-width: 981px) {
+    .hero { min-height: 80vh; min-height: 80svh; display: flex; align-items: center; padding: 40px 0; }
+    .hero > .wrap { width: 100%; }
+    .media .photo { max-height: calc(80vh - 80px); max-height: calc(80svh - 80px); margin-left: auto; }
+  }
+  .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--ink-2); background: #fff; border: 1px solid var(--line); padding: 8px 14px; border-radius: 999px; box-shadow: var(--shadow); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #1fbf6a; box-shadow: 0 0 0 4px rgba(31,191,106,.18); }
+  .hero h1 { font-size: 72px; line-height: .95; font-weight: 800; margin: 22px 0 10px; text-transform: uppercase; }
+  .hero h1 em { font-style: normal; background: linear-gradient(transparent 62%, rgba(236,138,42,.5) 62%); padding: 0 4px; }
+  .slogan { font-family: var(--display); font-weight: 800; font-size: 34px; letter-spacing: .5px; text-transform: uppercase; background: var(--fire); -webkit-background-clip: text; background-clip: text; color: transparent; margin: 0 0 16px; }
+  .hero p.lead { font-size: 18.5px; color: var(--text); max-width: 33em; margin: 0 0 30px; }
+  .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .trust { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 30px; font-size: 14.5px; font-weight: 600; color: var(--ink-2); }
+  .trust span { display: inline-flex; align-items: center; gap: 8px; }
+  .trust svg { width: 18px; height: 18px; color: var(--gold-deep); }
+
+  .media { position: relative; }
+  .media .photo { border-radius: 26px; overflow: hidden; box-shadow: 0 30px 70px rgba(28,22,17,.25); aspect-ratio: 1 / 1; }
+  .media .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .float { position: absolute; background: #fff; border-radius: 16px; box-shadow: 0 18px 40px rgba(28,22,17,.16); padding: 14px 16px; display: flex; align-items: center; gap: 12px; }
+  .float b { font-family: var(--display); font-size: 28px; color: var(--ink); line-height: 1; }
+  .float small { display: block; color: var(--muted); font-size: 12.5px; font-weight: 600; }
+  .float.quote { left: -26px; bottom: 34px; }
+  .float.local { right: -18px; top: 30px; }
+  .badge-ic { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: #fff0e0; color: var(--gold-deep); flex: none; }
+  .badge-ic.green { background: #e6f2e9; color: var(--pine); }
+
+  /* Stats band */
+  .band { background: var(--ink); color: #fff; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .stat { padding: 30px 24px; border-right: 1px solid rgba(255,255,255,.08); }
+  .stat:last-child { border-right: 0; }
+  .stat b { display: block; font-family: var(--display); font-size: 36px; line-height: 1; color: var(--gold); text-transform: uppercase; margin-bottom: 6px; }
+  .stat span { color: #c9bfb5; font-size: 14.5px; }
+
+  /* Sections */
+  section { padding: 96px 0; }
+  .head { max-width: 640px; margin-bottom: 44px; }
+  .kicker { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 12px; }
+  .kicker::before { content: ""; width: 26px; height: 3px; background: var(--gold); border-radius: 2px; }
+  h2 { font-size: 52px; line-height: 1; font-weight: 800; text-transform: uppercase; }
+  .head p { font-size: 18px; color: var(--muted); margin: 14px 0 0; }
+
+  .services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .card { position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 0 0 28px; transition: transform .2s, box-shadow .2s, border-color .2s; overflow: hidden; }
+  .card > :not(.svc-img) { margin-left: 24px; margin-right: 24px; }
+  .card::after { content: ""; position: absolute; left: 0; top: 0; height: 3px; width: 100%; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .25s; z-index: 2; }
+  .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: #ddd5cc; }
+  .card:hover::after { transform: scaleX(1); }
+  .svc-img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; transition: transform .5s ease; }
+  .card:hover .svc-img { transform: scale(1.04); }
+  .card .ic { position: relative; z-index: 1; width: 60px; height: 60px; border-radius: 14px; display: grid; place-items: center; background: var(--ink); color: var(--gold); border: 4px solid #fff; margin-top: -30px; margin-bottom: 14px; }
+  .card .ic svg { width: 24px; height: 24px; }
+  .card h3 { font-size: 26px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+
+  .about { background: var(--soft); }
+  .about .grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: center; }
+  .photo-card { background: #fff; border-radius: 26px; box-shadow: var(--shadow); padding: 14px; }
+  .photo-card img { border-radius: 18px; aspect-ratio: 1 / 1; object-fit: cover; width: 100%; height: auto; }
+  .about p.big { margin: 22px 0 26px; padding: 4px 0 4px 22px; border-left: 4px solid var(--gold); font-size: 20px; line-height: 1.55; color: var(--ink); font-weight: 500; }
+  .checks { list-style: none; padding: 0; margin: 0 0 30px; display: grid; gap: 12px; }
+  .checks li { display: flex; gap: 12px; align-items: flex-start; font-weight: 500; color: var(--ink-2); }
+  .checks svg { flex: none; width: 22px; height: 22px; color: #1fa35b; margin-top: 1px; }
+
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .step { border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 28px; background: #fff; }
+  .step .n { font-family: var(--display); font-size: 56px; font-weight: 800; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px var(--gold-deep); margin-bottom: 14px; }
+  .step h3 { font-size: 26px; text-transform: uppercase; margin-bottom: 8px; }
+  .step p { margin: 0; color: var(--muted); }
+
+  .gallery { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; }
+  .gallery figure { margin: 0; position: relative; border-radius: 22px; overflow: hidden; box-shadow: var(--shadow); }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 3; transition: transform .6s ease; }
+  .gallery figure:hover img { transform: scale(1.04); }
+  .gallery figcaption { position: absolute; left: 16px; bottom: 16px; background: rgba(255,255,255,.94); color: var(--ink); font-weight: 600; font-size: 14px; padding: 9px 14px; border-radius: 10px; }
+
+  .cta-band { position: relative; background: var(--ink); color: #fff; border-radius: 28px; padding: 56px; display: grid; grid-template-columns: 1.3fr auto; gap: 30px; align-items: center; overflow: hidden; }
+  .cta-band::after { content: ""; position: absolute; right: -120px; top: -120px; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(236,138,42,.38), transparent 65%); }
+  .cta-band h2 { color: #fff; font-size: 54px; }
+  .cta-band h2 .fire { background: var(--fire); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .cta-band p { color: #cfc6bc; font-size: 18px; margin: 12px 0 0; }
+  .cta-band .actions { position: relative; z-index: 1; display: grid; gap: 12px; }
+  .cta-band .btn-line { background: transparent; color: #fff; border-color: rgba(255,255,255,.35); }
+  .cta-band .btn-line:hover { border-color: #fff; }
+
+  .contact .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .panel { border: 1px solid var(--line); border-radius: 22px; padding: 30px; background: #fff; }
+  .panel h3 { font-size: 30px; text-transform: uppercase; margin-bottom: 18px; }
+  .line { display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .line:last-of-type { border-bottom: 0; }
+  .line .badge-ic { width: 44px; height: 44px; }
+  .line small { display: block; color: var(--muted); font-size: 13px; font-weight: 600; }
+  .line b { color: var(--ink); font-size: 17px; }
+  .map { width: 100%; height: 220px; border: 0; border-radius: 16px; margin-top: 16px; }
+  label { display: block; font-size: 14px; font-weight: 600; color: var(--ink-2); margin-bottom: 6px; }
+  input, select, textarea { width: 100%; font: inherit; color: var(--ink); background: var(--soft); border: 1.5px solid transparent; border-radius: 12px; padding: 14px; margin-bottom: 16px; transition: border-color .2s, background .2s; appearance: none; -webkit-appearance: none; }
+  input:focus, select:focus, textarea:focus { outline: 0; border-color: var(--gold); background: #fff; }
+  textarea { min-height: 110px; resize: vertical; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .note { font-size: 13px; color: var(--muted); margin: 10px 0 0; text-align: center; }
+
+  footer { border-top: 1px solid var(--line); padding: 46px 0 34px; }
+  .foot { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 30px; }
+  .foot h4 { font-family: var(--display); text-transform: uppercase; font-size: 18px; color: var(--ink); margin: 0 0 12px; letter-spacing: .5px; }
+  .foot a, .foot p { display: block; color: var(--muted); margin: 0 0 8px; font-size: 15px; }
+  .foot a:hover { color: var(--ink); }
+  .legal { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; border-top: 1px solid var(--line); margin-top: 30px; padding-top: 20px; font-size: 13.5px; color: var(--muted); }
+
+  .dock { display: none; }
+
+  /* Reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+  @media (max-width: 980px) {
+    nav { display: none; }
+    .hero .grid, .about .grid, .contact .grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero h1 { font-size: 58px; }
+    .services { grid-template-columns: 1fr 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .stat:nth-child(2) { border-right: 0; }
+    .stat:nth-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.08); }
+    .cta-band { grid-template-columns: 1fr; padding: 40px; }
+    .foot { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .bar { height: 66px; }
+    .brand img { width: 44px; height: 44px; }
+    .brand b { font-size: 21px; }
+    .brand span { font-size: 10.5px; letter-spacing: 2.6px; }
+    .bar .btn { height: 42px; padding: 0 14px; font-size: 14px; }
+    .bar .btn .label-long, .eyebrow .label-long { display: none; }
+    .bar .btn .label-short, .eyebrow .label-short { display: inline; }
+    .hero { padding: 28px 0 60px; }
+    .hero h1 { font-size: 46px; margin-top: 18px; }
+    .slogan { font-size: 28px; }
+    .hero p.lead { font-size: 17px; }
+    .cta .btn { flex: 1 1 100%; }
+    .trust { gap: 10px 16px; font-size: 14px; }
+    .media .photo { border-radius: 20px; }
+    .float { padding: 11px 13px; }
+    .float b { font-size: 23px; }
+    .float.quote { left: 10px; bottom: 12px; }
+    .float.local { right: 10px; top: 12px; }
+    .stat { padding: 22px 16px; }
+    .stat b { font-size: 28px; }
+    section { padding: 68px 0; }
+    h2 { font-size: 40px; }
+    .head { margin-bottom: 30px; }
+    .services, .steps, .gallery { grid-template-columns: 1fr; }
+    .step, .panel { padding: 24px; }
+    .about p.big { font-size: 18px; }
+    .cta-band { padding: 32px 24px; border-radius: 22px; }
+    .cta-band h2 { font-size: 42px; }
+    .two { grid-template-columns: 1fr; gap: 0; }
+    .foot { grid-template-columns: 1fr; }
+    footer { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+    .dock { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 8px; position: fixed; left: 10px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom)); z-index: 60; background: rgba(255,255,255,.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--line); border-radius: 18px; padding: 8px; box-shadow: 0 16px 40px rgba(28,22,17,.18); }
+    .dock a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; height: 56px; border-radius: 12px; font-size: 12.5px; font-weight: 700; color: var(--ink); background: var(--soft); }
+    .dock a.primary { background: var(--ink); color: #fff; flex-direction: row; gap: 8px; font-size: 15px; }
+    .dock svg { width: 20px; height: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.6"/></g></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></g></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="13" height="10" rx="2"/><path d="M15 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></g></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 1.5-5 3-6.5 0 2 1 3.5 2.5 4C11 8 11 5 12 2z"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-9 6-15 16-16-1 10-7 16-16 16z"/><path d="M4 20l9-9"/></g></symbol>
+  <symbol id="i-tree" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l6 8h-3l4 6H5l4-6H6z"/><path d="M12 16v6"/></g></symbol>
+  <symbol id="i-google" viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 12.2c0-.7-.1-1.3-.2-1.9H12v3.7h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22zM6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1a10 10 0 0 0 0 9.2zM12 5.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 3.1 7.4L6.4 10c.8-2.3 3-4.1 5.6-4.1z"/></symbol>
+</svg>
+
+<header id="hdr">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Fritzs' Fire Wood home">
+      <img src="logo.svg" alt="Fritzs' Fire Wood logo" width="52" height="52">
+      <div><b>Fritzs' Fire Wood</b><span>ANDERSON, CA</span></div>
+    </a>
+    <nav aria-label="Main">
+      <a href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-dark" href="tel:+15307683126"><svg><use href="#i-phone"/></svg><span class="label-long">(530) 768-3126</span><span class="label-short">Call</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap grid">
+      <div class="reveal">
+        <span class="eyebrow"><span class="dot"></span><span>Firewood &amp; Yard Work · <span class="label-long">Anderson &amp; Shasta County</span><span class="label-short">Anderson</span></span></span>
+        <h1>Firewood &amp; yard work, <em>handled</em></h1>
+        <div class="slogan">Warm home. Clean yard.</div>
+        <p class="lead">Firewood, yard maintenance, brush clearing and dump runs for homes and properties in Anderson and around Shasta County. One call and it's taken care of.</p>
+        <div class="cta">
+          <a class="btn btn-dark" href="tel:+15307683126"><svg><use href="#i-phone"/></svg>Call (530) 768-3126</a>
+          <a class="btn btn-line" href="sms:+15307683126"><svg><use href="#i-chat"/></svg>Text for a quote</a>
+        </div>
+        <div class="trust">
+          <span><svg><use href="#i-tag"/></svg>Free quotes</span>
+          <span><svg><use href="#i-pin"/></svg>Local to Anderson</span>
+          <span><svg><use href="#i-truck"/></svg>Brush &amp; junk hauled away</span>
+        </div>
+      </div>
+      <div class="media reveal">
+        <div class="photo"><img src="hero.jpg" alt="Stacked split firewood" width="1100" height="1100" fetchpriority="high"></div>
+        <div class="float quote">
+          <div class="badge-ic"><svg width="22" height="22"><use href="#i-tag"/></svg></div>
+          <div><b>Free</b><small>Quotes, call or text</small></div>
+        </div>
+        <div class="float local">
+          <div class="badge-ic green"><svg width="22" height="22"><use href="#i-tree"/></svg></div>
+          <div><b>Local</b><small>Anderson, CA</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap stats">
+      <div class="stat"><b>Firewood</b><span>For your stove, fireplace or fire pit</span></div>
+      <div class="stat"><b>Yard care</b><span>Regular upkeep and cleanups</span></div>
+      <div class="stat"><b>Brush</b><span>Overgrowth cleared back</span></div>
+      <div class="stat"><b>Dump runs</b><span>Loaded up and hauled off</span></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="kicker">Services</div>
+        <h2>Four jobs, one local crew</h2>
+        <p>From a cord of wood for the winter to a full property cleanup, it's all one call.</p>
+      </div>
+      <div class="services">
+        <article class="card reveal">
+          <img class="svc-img" src="svc-firewood.jpg" alt="Split firewood stacked tight" width="800" height="500" loading="lazy">
+          <div class="ic"><svg><use href="#i-flame"/></svg></div>
+          <h3>Firewood</h3>
+          <p>Firewood for your wood stove, fireplace or fire pit. Call or text to ask what's available and the current price.</p>
+        </article>
+        <article class="card reveal">
+          <img class="svc-img" src="svc-yard.jpg" alt="Fall leaves being cleared from a yard" width="800" height="500" loading="lazy">
+          <div class="ic"><svg><use href="#i-leaf"/></svg></div>
+          <h3>Yard Maintenance</h3>
+          <p>Leaves, weeds and overgrowth kept under control so your property stays neat all year.</p>
+        </article>
+        <article class="card reveal">
+          <img class="svc-img" src="svc-brush.jpg" alt="Crew clearing dry brush and branches" width="800" height="500" loading="lazy">
+          <div class="ic"><svg><use href="#i-tree"/></svg></div>
+          <h3>Brush Clearing</h3>
+          <p>Dry brush and overgrown areas cut back and cleared, opening up your land and helping with defensible space.</p>
+        </article>
+        <article class="card reveal">
+          <img class="svc-img" src="svc-dumpruns.jpg" alt="Pickup truck pulling a loaded dump trailer" width="800" height="500" loading="lazy">
+          <div class="ic"><svg><use href="#i-truck"/></svg></div>
+          <h3>Dump Runs</h3>
+          <p>Yard waste, brush piles and junk loaded up and hauled to the dump, so you don't have to.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap grid">
+      <div class="photo-card reveal"><img src="woodpile-pines.jpg" alt="Long stack of firewood among pine trees" width="1000" height="1000" loading="lazy"></div>
+      <div class="reveal">
+        <div class="kicker">About us</div>
+        <h2>Local help for Anderson homes &amp; land</h2>
+        <p class="big">Fritzs' Fire Wood keeps homes warm and properties clean around Anderson. Need wood for the cold months, a yard brought back under control, or a pile of brush gone? Give us a call.</p>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>Firewood, yard work and hauling from one local business</li>
+          <li><svg><use href="#i-check"/></svg>Serving Anderson and nearby Shasta County</li>
+          <li><svg><use href="#i-check"/></svg>Free quote before any work starts</li>
+          <li><svg><use href="#i-check"/></svg>Call or text, whatever's easier for you</li>
+        </ul>
+        <a class="btn btn-gold" href="tel:+15307683126"><svg><use href="#i-phone"/></svg>Talk to us today</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="kicker">How it works</div>
+        <h2>Done in 3 simple steps</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="n">01</div><h3>Call or text</h3><p>Tell us what you need: firewood, a yard cleanup, brush cleared or a load hauled. Photos help.</p></div>
+        <div class="step reveal"><div class="n">02</div><h3>Get a free quote</h3><p>A clear price before anything starts. No surprises.</p></div>
+        <div class="step reveal"><div class="n">03</div><h3>We get it done</h3><p>We show up, do the work and leave your place cleaner than we found it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="gallery">
+        <figure class="reveal"><img src="gallery-woodshed.jpg" alt="Firewood stacked in a wood shed" loading="lazy" width="1000" height="750"><figcaption>Firewood for the cold months</figcaption></figure>
+        <figure class="reveal"><img src="gallery-leaves.jpg" alt="Fall leaves covering a lawn" loading="lazy" width="1000" height="750"><figcaption>Fall yard cleanups</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Need wood or a cleanup? <span class="fire">One call.</span></h2>
+          <p>Call now or text a few photos of the job for a free quote.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-gold" href="tel:+15307683126"><svg><use href="#i-phone"/></svg>Call (530) 768-3126</a>
+          <a class="btn btn-line" href="sms:+15307683126"><svg><use href="#i-chat"/></svg>Text photos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="kicker">Contact</div>
+        <h2>Get your free quote</h2>
+        <p>Call, text, or send the details below and we'll get back to you.</p>
+      </div>
+      <div class="grid">
+        <div class="panel reveal">
+          <h3>Fritzs' Fire Wood</h3>
+          <a class="line" href="tel:+15307683126"><span class="badge-ic"><svg width="20" height="20"><use href="#i-phone"/></svg></span><span><small>Call or text</small><b>(530) 768-3126</b></span></a>
+          <a class="line" href="https://maps.google.com/?cid=1293196012333907409" target="_blank" rel="noopener"><span class="badge-ic"><svg width="20" height="20"><use href="#i-pin"/></svg></span><span><small>Based in</small><b>Anderson, CA 96007</b></span></a>
+          <div class="line"><span class="badge-ic green"><svg width="20" height="20"><use href="#i-tree"/></svg></span><span><small>Service area</small><b>Anderson &amp; nearby Shasta County</b></span></div>
+          <a class="btn btn-line" href="https://maps.google.com/?cid=1293196012333907409" target="_blank" rel="noopener" style="width:100%;margin-top:10px"><svg><use href="#i-google"/></svg>Find us on Google</a>
+          <iframe class="map" loading="lazy" title="Map of Anderson, CA" src="https://www.google.com/maps?q=Anderson,+CA+96007&z=12&output=embed"></iframe>
+        </div>
+        <form class="panel reveal" id="quote">
+          <h3>Request a quote</h3>
+          <div class="two">
+            <div><label for="n">Name</label><input id="n" name="n" required autocomplete="name" placeholder="Your name"></div>
+            <div><label for="p">Phone</label><input id="p" name="p" type="tel" autocomplete="tel" placeholder="(555) 555-5555"></div>
+          </div>
+          <label for="s">Service needed</label>
+          <select id="s" name="s">
+            <option>Firewood</option>
+            <option>Yard maintenance</option>
+            <option>Brush clearing</option>
+            <option>Dump run</option>
+            <option>Not sure yet</option>
+          </select>
+          <label for="m">Tell us about the job</label>
+          <textarea id="m" name="m" placeholder="How much wood, the size of the yard or brush area, what needs hauling, and where you are"></textarea>
+          <button class="btn btn-dark" type="submit" style="width:100%"><svg><use href="#i-chat"/></svg>Send request</button>
+          <p class="note">Opens a text to (530) 768-3126 with your details.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:14px"><img src="logo.svg" alt="" width="52" height="52"><div><b>Fritzs' Fire Wood</b><span>ANDERSON, CA</span></div></a>
+        <p>Firewood, yard maintenance, brush clearing and dump runs in Anderson and Shasta County.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Firewood</a>
+        <a href="#services">Yard Maintenance</a>
+        <a href="#services">Brush Clearing</a>
+        <a href="#services">Dump Runs</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+15307683126">(530) 768-3126</a>
+        <a href="sms:+15307683126">Text us</a>
+        <p>Anderson, CA 96007</p>
+      </div>
+    </div>
+    <div class="legal"><span>© 2026 Fritzs' Fire Wood. All rights reserved.</span><span>Anderson, California</span></div>
+  </div>
+</footer>
+
+<div class="dock" role="navigation" aria-label="Quick contact">
+  <a class="primary" href="tel:+15307683126"><svg><use href="#i-phone"/></svg>Call now</a>
+  <a href="sms:+15307683126"><svg><use href="#i-chat"/></svg>Text</a>
+  <a href="https://maps.google.com/?cid=1293196012333907409" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Find us</a>
+</div>
+
+<script>
+  // Header shadow once the page scrolls.
+  const hdr = document.getElementById("hdr");
+  addEventListener("scroll", () => hdr.classList.toggle("scrolled", scrollY > 8), { passive: true });
+
+  // Fade sections in as they enter the screen.
+  const io = "IntersectionObserver" in window && new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }, { rootMargin: "0px 0px -8% 0px" });
+  document.querySelectorAll(".reveal").forEach((el) => io ? io.observe(el) : el.classList.add("in"));
+
+  // The quote form opens a text message with the details filled in.
+  document.getElementById("quote").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const f = e.target;
+    const body = `Hi, this is ${f.n.value}${f.p.value ? " (" + f.p.value + ")" : ""}. Service: ${f.s.value}. ${f.m.value}`.trim();
+    location.href = "sms:+15307683126?&body=" + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
